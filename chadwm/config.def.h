@@ -37,9 +37,9 @@ static const int new_window_attach_on_end = 0; /*  1 means the new window will a
 #define ICONSIZE 19   /* icon size */
 #define ICONSPACING 8 /* space between icon and title */
 
-static const char *fonts[]          = {"Iosevka:style:medium:size=12" ,"JetBrainsMono Nerd Font Mono:style:medium:size=19" };
+// static const char *fonts[]          = {"Iosevka:style:medium:size=12" ,"JetBrainsMono Nerd Font Mono:style:medium:size=19" };
+static const char *fonts[]          = { "HackNerdFont-Regular:style:medium:size=14" };
 
-// theme
 #include "themes/onedark.h"
 
 static const char *colors[][3]      = {
@@ -149,7 +149,7 @@ static const Key keys[] = {
     {MODKEY,                            XK_u,       spawn,
         SHCMD("maim --select | xclip -selection clipboard -t image/png")},
 
-    { MODKEY,                           XK_c,       spawn,          SHCMD("rofi -show drun") },
+    { MODKEY,                           XK_c,       spawn,          SHCMD("rofi -show combi") },
     { MODKEY,                           XK_Return,  spawn,            SHCMD("st")},
     { MODKEY,                           XK_e,       spawn,            SHCMD("microsoft-edge-stable")},
 
